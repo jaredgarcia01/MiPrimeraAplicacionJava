@@ -4,18 +4,45 @@
  * and open the template in the editor.
  */
 package semana2_ejemplos;
+        // TODO code application logic herepackage ejemplos_semana2;
 
-/**
- *
- * @author ITCA
- */
-public class Semana2_ejemplos {
-
-    /**
-     * @param args the command line arguments
-     */
+package ejemplosguia2_sem2;
+public class CreateMetodosConParametros {
     public static void main(String[] args) {
-        // TODO code application logic here
+        System.out.println("Metodo void");
+        metodoConParametrosVoid(1, 24.34, "Lucas");
+        System.out.println("---------------");
+        System.out.println("Metodo int");
+        metodoConParametrosInt(1);
+        System.out.println("---------------");
+        System.out.println("Metodo double");
+        metodoConParametrosDouble(24.34);
+        System.out.println("---------------");
+        System.out.println("Metodo atring");
+        metodoConParametrosString("Lucas");
+    }
+    
+public static void metodoConParametrosVoid (int valorInt, double valorDouble, String valorString){
+    System.out.println("Valor int:" + valorInt);
+    System.out.println("Valor doubles: " + valorDouble);
+    System.out.println("Valor String: " + valorString);
+}
+
+public static int metodoConParametrosInt(int valorInt){
+    System.out.println("El valor int es: " +valorInt);
+return valorInt;
+}
+
+public static double metodoConParametrosDouble (double valorDouble){
+    System.out.println("El valor double es: " + valorDouble);
+return valorDouble;
+}
+
+public static String metodoConParametrosString (String valorString){
+    System.out.println("El valor String es : " +valorString);
+return valorString;
+   }
+
     }
     
 }
